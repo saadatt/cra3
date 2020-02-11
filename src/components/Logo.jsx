@@ -1,11 +1,11 @@
 import React from 'react';
-import '../App.css';
-import logo from './webdriverio.png';
+import '../index.css';
+import logo from './supremelogo.png';
 
 function Logo() {
     return (
         <div className="logo">
-            <img src={logo} alt="Logo"/>
+            <img src={logo}  width='100%' alt="Logo"/>
         </div>
     );
 }
