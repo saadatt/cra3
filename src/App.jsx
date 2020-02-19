@@ -2,7 +2,7 @@ import React, {useState} from 'react';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import Content from './components/Content';
-import State from './components/State';
+import Counter from './components/Counter';
 
 const items = { menu1:[{
     text: 'Yeezys',
@@ -33,27 +33,31 @@ const items = { menu1:[{
     link: 'size charts-page'
 }]};
 
-// const cr1 = 5, cr2 = 2;
-// const tc= cr1+ cr2;
+const counter1 = 5, counter2 = 2;
+const totalCounter= counter1 + counter2;
 
 function App() {
-    function buttonClicked(name) {
-        console.log('Clicked!!' +name)
+     function buttonClicked(name) {
+         console.log('Clicked!!' +name)
+     }
+    const [totalCount, setTotalCount] = useState(totalCounter);
+
+     function countChangesPlus(value){
+         setTotalCount(totalCount+1);
+     }
+    function countChangesMinus(value){
+        setTotalCount(totalCount-1);
     }
-    // const [totalCount, setTotalCount] = useState(tc);
-    //
-    // function countChanges(value){
-    //     console.log('Changed' + value)
-    // }
     return(
         <div className="App">
             <Header menuItems={items.menu1} />
-            {/*Total: {totalCount}*/}
             <Content bc={buttonClicked}/>
             <hr/>
-            {/*<State startCount ={cr1} countChanges={countChanges}/>*/}
+             Total: {totalCount}
             <hr/>
-            {/*<State startCount ={cr2} countChanges={countChanges}/>*/}
+            <Counter startCount ={counter1} countChangesPlus={countChangesPlus} countChangesMinus={countChangesMinus}/>
+            <hr/>
+            <Counter startCount ={counter2} countChangesPlus={countChangesPlus} countChangesMinus={countChangesMinus}/>
             <hr/>
             <Footer menuItems={items} />
         </div>

@@ -1,19 +1,18 @@
 import React, {useState} from 'react';
 
-function State(props) {
-    //let count = 3
-    const[count, setCount] = useState(props.startCount);
+function Counter(props) {
+
+    const[count, setCount] = useState(props.startCount); //[] is called array destructuring in React
 
     const countChangePlusHandler = () =>{
         setCount(count+1);
-        console.log('change +');
-        props.countChanges(count+1)
+        props.countChangesPlus();
     };
     const countChangeMinusHandler = () =>{
-        setCount(count-1);
-        props.countChanges(count-1);
-        console.log('change -')
+        setCount(count -1);
+        props.countChangesMinus();
     };
+
 
     return(
 
@@ -26,4 +25,4 @@ function State(props) {
     );
 }
 
-export default State;
+export default Counter;
