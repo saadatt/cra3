@@ -12,6 +12,7 @@ function Footer(props) {
                 </div>
                 <div className='footer-menu'>
                     <Menu menuItems={props.menuItems.menu1} />
+
                 </div>
                 <div className='footer-menu'>
                     <Menu menuItems={props.menuItems.menu2} />

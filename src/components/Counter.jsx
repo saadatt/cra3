@@ -9,6 +9,7 @@ function Counter(props) {
         props.countChangesPlus();
     };
     const countChangeMinusHandler = () =>{
+
         setCount(count -1);
         props.countChangesMinus();
     };

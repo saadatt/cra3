@@ -10,6 +10,7 @@ function Content(props) {
 
     const inputHandler = (e) => {
         name = e.target.value;
+
         console.log(e.target.value);
 
     };
