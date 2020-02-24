@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/cra3/static/css/main.1378db2f.chunk.css",
+    "main.js": "/cra3/static/js/main.3a738304.chunk.js",
+    "main.js.map": "/cra3/static/js/main.3a738304.chunk.js.map",
+    "runtime-main.js": "/cra3/static/js/runtime-main.5af43166.js",
+    "runtime-main.js.map": "/cra3/static/js/runtime-main.5af43166.js.map",
+    "static/js/2.8646f2df.chunk.js": "/cra3/static/js/2.8646f2df.chunk.js",
+    "static/js/2.8646f2df.chunk.js.map": "/cra3/static/js/2.8646f2df.chunk.js.map",
+    "index.html": "/cra3/index.html",
+    "precache-manifest.5469917ae4bf7a6141e5cdca08904d7b.js": "/cra3/precache-manifest.5469917ae4bf7a6141e5cdca08904d7b.js",
+    "service-worker.js": "/cra3/service-worker.js",
+    "static/css/main.1378db2f.chunk.css.map": "/cra3/static/css/main.1378db2f.chunk.css.map",
+    "static/js/2.8646f2df.chunk.js.LICENSE.txt": "/cra3/static/js/2.8646f2df.chunk.js.LICENSE.txt",
+    "static/media/copyright2.jpg": "/cra3/static/media/copyright2.8bb11f2e.jpg",
+    "static/media/supremelogo.png": "/cra3/static/media/supremelogo.d217ae63.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.5af43166.js",
+    "static/js/2.8646f2df.chunk.js",
+    "static/css/main.1378db2f.chunk.css",
+    "static/js/main.3a738304.chunk.js"
+  ]
+}
