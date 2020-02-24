@@ -9,6 +9,7 @@ const Menu = (props) => {
    /* const a=[]; for (let i=0; i<items.length; i++) {a.push(<MenuItem key={items[i].text} menuItem={items[i]}/>);   */
     return (
         <nav>
+
             <ul>
                 {a}
             </ul>

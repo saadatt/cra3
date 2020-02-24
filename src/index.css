@@ -15,7 +15,6 @@ code {
 header {
     background-color: white;
     border: solid red 5px;
-
 }
 
 footer{
@@ -81,7 +80,7 @@ footer {
     display: inline-block;
     list-style-type: none;
     alignment-baseline: center;
-    margin-left: 190px;
+    margin-left: 200px;
 }
 
 .footer-menu{
@@ -102,6 +101,10 @@ ul{
     list-style-type: none;
     margin: 0;
     padding: 0;
+}
+
+input  {
+    margin: 0 15px;
 }
 
 

@@ -6,6 +6,7 @@ function Logo() {
     return (
         <div className="logo">
             <img src={logo}  width='100%' alt="Logo"/>
+
         </div>
     );
 }

@@ -12,6 +12,7 @@ function Footer(props) {
                 </div>
                 <div className='footer-menu'>
                     <Menu menuItems={props.menuItems.menu1} />
+
                 </div>
                 <div className='footer-menu'>
                     <Menu menuItems={props.menuItems.menu2} />
@@ -22,9 +23,8 @@ function Footer(props) {
                         from the original producer/supplier,<br/>
                         satisfaction guaranteed!<br/><br/>
                         <div>
-                            <img src={copyright}  width='8%'/>02/11/2020
+                            <img src={copyright}  width='8%' alt="Logo"/>02/11/2020
                         </div>
-
                     </p>
                 </div>
             </div>

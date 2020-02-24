@@ -1,7 +1,8 @@
-import React from 'react';
+import React, {useState} from 'react';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import Content from './components/Content';
+import Counter from './components/Counter';
 
 const items = { menu1:[{
     text: 'Yeezys',
@@ -32,11 +33,32 @@ const items = { menu1:[{
     link: 'size charts-page'
 }]};
 
+const counter1 = 5, counter2 = 2;
+const totalCounter= counter1 + counter2;
+
 function App() {
+     function buttonClicked(name) {
+         console.log('Clicked!!' +name)
+     }
+    const [totalCount, setTotalCount] = useState(totalCounter);
+
+     function countChangesPlus(value){
+         setTotalCount(totalCount+1);
+     }
+    function countChangesMinus(value){
+        setTotalCount(totalCount-1);
+    }
     return(
         <div className="App">
             <Header menuItems={items.menu1} />
-            <Content/>
+            <Content bc={buttonClicked}/>
+            <hr/>
+             Total: {totalCount}
+            <hr/>
+            <Counter startCount ={counter1} countChangesPlus={countChangesPlus} countChangesMinus={countChangesMinus}/>
+            <hr/>
+            <Counter startCount ={counter2} countChangesPlus={countChangesPlus} countChangesMinus={countChangesMinus}/>
+            <hr/>
             <Footer menuItems={items} />
         </div>
     );

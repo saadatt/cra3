@@ -8,6 +8,7 @@ const Header = (props) =>{
                 <div className ="container">
                 <Logo/>
                 <Menu menuItems={props.menuItems} />
+
                 </div>
             </header>
         );
